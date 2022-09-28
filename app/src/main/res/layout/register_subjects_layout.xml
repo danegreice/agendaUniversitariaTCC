@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/registerSubjectsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stringRegisterSubjectsTitle"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerSubjectsEditTextCodeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerSubjectsTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerSubjectsEditTextCode"
+            style="@style/text_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:hint="@string/stringRegisterSubjectsEditTextCode"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerSubjectsEditTextNameLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/registerSubjectsEditTextCodeLayout"
+        app:layout_constraintStart_toStartOf="@+id/registerSubjectsEditTextCodeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/registerSubjectsEditTextCodeLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerSubjectsEditTextName"
+            style="@style/text_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:hint="@string/stringRegisterSubjectsEditTextName"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerSubjectsEditTextTeacherLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/registerSubjectsEditTextNameLayout"
+        app:layout_constraintStart_toStartOf="@+id/registerSubjectsEditTextNameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/registerSubjectsEditTextNameLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerSubjectsEditTextTeacher"
+            style="@style/text_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:hint="@string/stringRegisterSubjectsEditTextTeacher"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:id="@+id/registerSubjectsDaysOfTheWeekTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stringRegisterSubjectsDaysOfTheWeekTitle"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerSubjectsEditTextTeacherLayout" />
+
+    <CheckBox
+        android:id="@+id/registerSubjectsCheckBoxMonday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="80dp"
+        android:text="@string/stringRegisterSubjectsCheckBoxMonday"
+        android:textSize="5pt"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerSubjectsDaysOfTheWeekTitle" />
+
+    <CheckBox
+        android:id="@+id/registerSubjectsCheckBoxWednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stringRegisterSubjectsCheckBoxWednesday"
+        android:textSize="5pt"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerSubjectsCheckBoxMonday" />
+
+    <CheckBox
+        android:id="@+id/registerSubjectsCheckBoxTuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:text="@string/stringRegisterSubjectsCheckBoxTuesday"
+        android:textSize="5pt"
+        app:layout_constraintBottom_toBottomOf="@+id/registerSubjectsCheckBoxMonday"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/registerSubjectsCheckBoxMonday"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/registerSubjectsCheckBoxThursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stringRegisterSubjectsCheckBoxThursday"
+        android:textSize="5pt"
+        app:layout_constraintBottom_toBottomOf="@+id/registerSubjectsCheckBoxWednesday"
+        app:layout_constraintEnd_toStartOf="@+id/registerSubjectsCheckBoxFriday"
+        app:layout_constraintStart_toEndOf="@+id/registerSubjectsCheckBoxWednesday"
+        app:layout_constraintTop_toTopOf="@+id/registerSubjectsCheckBoxWednesday" />
+
+    <CheckBox
+        android:id="@+id/registerSubjectsCheckBoxFriday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/stringRegisterSubjectsCheckBoxFriday"
+        android:textSize="5pt"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerSubjectsCheckBoxThursday"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/registerSubjectsCheckBoxThursday" />
+
+    <TextView
+        android:id="@+id/registerSubjectsSchedulesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/stringRegisterSubjectsSchedulesTitle"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerSubjectsCheckBoxWednesday" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerSubjectsEditTextStartTimeLayout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerSubjectsSchedulesTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerSubjectsEditTextStartTime"
+            style="@style/text_input_edit_text"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/stringRegisterSubjectsEditTextStartTime"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerSubjectsEditTextEndTimeLayout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerSubjectsEditTextStartTimeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/registerSubjectsEditTextStartTimeLayout"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerSubjectsEditTextEndTime"
+            style="@style/text_input_edit_text"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/stringRegisterSubjectsEditTextEndTime"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/registerSubjectsButtonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/colorSecondaryVariant"
+        android:text="@string/stringRegisterSubjectsButtonRegister"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/registerSubjectsButtonCancel"
+        app:layout_constraintEnd_toEndOf="@+id/registerSubjectsEditTextEndTimeLayout"
+        app:layout_constraintTop_toTopOf="@+id/registerSubjectsButtonCancel" />
+
+    <Button
+        android:id="@+id/registerSubjectsButtonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/colorSecondaryVariant"
+        android:layout_marginTop="25dp"
+        android:text="@string/stringRegisterSubjectsButtonCancel"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/registerSubjectsEditTextStartTimeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/registerSubjectsEditTextStartTimeLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

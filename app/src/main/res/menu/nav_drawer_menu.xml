@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemMenuTasks"
+        android:title="@string/stringItemMenuTasks"/>
+    <item
+        android:id="@+id/itemMenuSubjects"
+        android:title="@string/stringItemMenuSubjects"/>
+    <item
+        android:id="@+id/itemMenuSchedules"
+        android:title="@string/stringItemMenuSchedules"/>
+    <item
+        android:id="@+id/itemMenuGrades"
+        android:title="@string/stringItemMenuGrades"/>
+    <item
+        android:id="@+id/itemMenuCalendar"
+        android:title="@string/stringItemMenuCalendar"/>
+    <item
+        android:id="@+id/itemMenuComplementaryHours"
+        android:title="@string/stringItemMenuComplementaryHours"/>
+    <item
+        android:id="@+id/itemMenuProfile"
+        android:title="@string/stringItemMenuProfile"/>
+    <item
+        android:id="@+id/itemMenuAbout"
+        android:title="@string/stringItemMenuAbout"/>
+
+</menu>

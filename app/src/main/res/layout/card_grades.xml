@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardGrades"
+    android:layout_marginTop="1dp"
+    android:background="@drawable/rounded"
+    android:padding="3dp">
+
+    <TextView
+        android:id="@+id/cardGradesCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_margin="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cardGradesAv1Layout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardGradesP1Layout"
+        app:layout_constraintEnd_toStartOf="@+id/cardGradesP1Layout"
+        app:layout_constraintTop_toTopOf="@+id/cardGradesP1Layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cardGradesAv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:hint="@string/av1"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="13sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cardGradesP1Layout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardGradesAv2Layout"
+        app:layout_constraintEnd_toStartOf="@+id/cardGradesAv2Layout"
+        app:layout_constraintTop_toTopOf="@+id/cardGradesAv2Layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cardGradesP1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:hint="@string/p1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="13sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cardGradesAv2Layout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardGradesP2Layout"
+        app:layout_constraintEnd_toStartOf="@+id/cardGradesP2Layout"
+        app:layout_constraintTop_toTopOf="@+id/cardGradesP2Layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cardGradesAv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:hint="@string/av2"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="13sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cardGradesP2Layout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardGradesAv3Layout"
+        app:layout_constraintEnd_toStartOf="@+id/cardGradesAv3Layout"
+        app:layout_constraintTop_toTopOf="@+id/cardGradesAv3Layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cardGradesP2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:hint="@string/p2"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="13sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cardGradesAv3Layout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardGradesP3Layout"
+        app:layout_constraintEnd_toStartOf="@+id/cardGradesP3Layout"
+        app:layout_constraintTop_toTopOf="@+id/cardGradesP3Layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cardGradesAv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:hint="@string/av3"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="13sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cardGradesP3Layout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="20dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardGradesCode">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cardGradesP3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:hint="@string/p3"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="13sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/cardGradesFinalGrade"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:hint="@string/media"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardGradesSituation"
+        app:layout_constraintEnd_toStartOf="@+id/cardGradesSituation"
+        app:layout_constraintTop_toTopOf="@+id/cardGradesSituation" />
+
+    <TextView
+        android:id="@+id/cardGradesSituation"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:hint="@string/reprovado"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardGradesP3Layout" />
+
+    <TextView
+        android:id="@+id/cardGradesTitleSituation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:text="@string/stringCardGradesTitleSituation"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardGradesFinalGrade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardGradesFinalGrade" />
+
+    <ImageButton
+        android:id="@+id/cardGradesRegister"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/ic_done"
+        app:layout_constraintEnd_toStartOf="@+id/cardGradesDelete"
+        app:layout_constraintTop_toTopOf="@+id/cardGradesDelete" />
+
+    <ImageButton
+        android:id="@+id/cardGradesDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

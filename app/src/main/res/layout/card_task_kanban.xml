@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardTasksKanban"
+    android:layout_margin="2dp"
+    android:elevation="3dp"
+    android:background="@drawable/rounded"
+    android:padding="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/cardTasksNameKanban"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="3dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cardTasksSubjectKanban"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardTasksNameKanban"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardTasksNameKanban" />
+
+    <TextView
+        android:id="@+id/cardTasksDateKanban"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardTasksSubjectKanban"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardTasksSubjectKanban" />
+
+    <ImageView
+        android:id="@+id/cardTasksDoneKanban"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_done"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cardTasksDateKanban"
+        app:layout_constraintTop_toBottomOf="@+id/cardTasksDateKanban" />
+
+    <ImageView
+        android:id="@+id/cardTasksBackKanban"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_back"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/cardTasksDateKanban"
+        app:layout_constraintTop_toBottomOf="@+id/cardTasksDateKanban" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

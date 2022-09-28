@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="5dp"
+    tools:context=".ComplementaryHoursActivity">
+
+    <TextView
+        android:id="@+id/complementaryHoursActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stringComplementaryHoursActivityTitle"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/complementaryHoursActivityReturn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/complementaryHoursActivityPieChart"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complementaryHoursActivityTitle" />
+
+    <TextView
+        android:id="@+id/complementaryHoursActivityTitleTeaching"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:text="@string/stringComplementaryHoursActivityTitleTeaching"
+        app:layout_constraintTop_toBottomOf="@+id/complementaryHoursActivityPieChart" />
+    <ProgressBar
+        android:id="@+id/complementaryHoursActivityProgressBarTeaching"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/layout_progress_bar_teaching"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complementaryHoursActivityTitleTeaching" />
+
+    <TextView
+        android:id="@+id/complementaryHoursActivityTitleResearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:text="@string/stringComplementaryHoursActivityTitleResearch"
+        app:layout_constraintTop_toBottomOf="@+id/complementaryHoursActivityProgressBarTeaching" />
+
+    <ProgressBar
+        android:id="@+id/complementaryHoursActivityProgressBarResearch"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:progressDrawable="@drawable/layout_progress_bar_research"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complementaryHoursActivityTitleResearch" />
+
+    <TextView
+        android:id="@+id/complementaryHoursActivityTitleExtension"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:text="@string/stringComplementaryHoursActivityTitleExtension"
+        app:layout_constraintTop_toBottomOf="@+id/complementaryHoursActivityProgressBarResearch" />
+
+
+    <ProgressBar
+        android:id="@+id/complementaryHoursActivityProgressBarExtension"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:progressDrawable="@drawable/layout_progress_bar_extension"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complementaryHoursActivityTitleExtension" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

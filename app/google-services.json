@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "930514190665",
+    "project_id": "agendauniversitaria-2322a",
+    "storage_bucket": "agendauniversitaria-2322a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930514190665:android:f3034cb05b074580975a98",
+        "android_client_info": {
+          "package_name": "com.example.projeto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930514190665-bdvscka3vj4742n76uu2m99s0hk1rjop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJHJPPzFaXT8o_uA0_JfHb16yQIZYifsU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930514190665-bdvscka3vj4742n76uu2m99s0hk1rjop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

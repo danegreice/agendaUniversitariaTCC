@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/registerActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/stringRegisterActivityTitle"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerActivityEditNameLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerActivityTitle"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerActivityEditName"
+                style="@style/text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/stringRegisterActivityEditName"
+                android:inputType="text"
+                android:maxLength="30"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerActivityEditEmailLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/registerActivityEditNameLayout"
+            app:layout_constraintStart_toStartOf="@+id/registerActivityEditNameLayout"
+            app:layout_constraintTop_toBottomOf="@+id/registerActivityEditNameLayout"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerActivityEditEmail"
+                style="@style/text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/stringRegisterActivityEditEmail"
+                android:inputType="textEmailAddress"
+                android:maxLength="40"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerActivityEditPasswordLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="@+id/registerActivityEditEmailLayout"
+            app:layout_constraintStart_toStartOf="@+id/registerActivityEditEmailLayout"
+            app:layout_constraintTop_toBottomOf="@+id/registerActivityEditEmailLayout"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerActivityEditPassword"
+                style="@style/text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/stringRegisterActivityEditPassword"
+                android:inputType="textPassword"
+                android:maxLength="8"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/registerActivityButtonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="?attr/colorSecondaryVariant"
+            android:text="@string/stringRegisterActivityButtonRegister"
+            app:layout_constraintStart_toStartOf="@+id/registerActivityEditPasswordLayout"
+            app:layout_constraintTop_toBottomOf="@+id/registerActivityEditPasswordLayout" />
+
+        <Button
+            android:id="@+id/registerActivityButtonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="?attr/colorSecondaryVariant"
+            android:text="@string/stringRegisterActivityButtonCancel"
+            app:layout_constraintBottom_toBottomOf="@+id/registerActivityButtonRegister"
+            app:layout_constraintEnd_toEndOf="@+id/registerActivityEditPasswordLayout"
+            app:layout_constraintTop_toTopOf="@+id/registerActivityButtonRegister" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

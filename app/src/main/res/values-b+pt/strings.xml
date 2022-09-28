@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">Agenda Universitária</string>
+    <string name="app_version">1.0</string>
+    <string name="stringLoginActivityEditLogin">Insira seu e-mail</string>
+    <string name="stringLoginActivityEditPassword">Insira sua senha</string>
+    <string name="stringLoginActivityButtonLogin">ENTRAR</string>
+    <string name="stringLoginActivityNoRegistration">Não tem cadastro? Clique aqui</string>
+    <string name="stringRegisterActivityTitle">Cadastro</string>
+    <string name="descriptionLogo">Logo do projeto</string>
+    <string name="descriptionUser">Foto do usuário</string>
+    <string name="stringRegisterActivityEditName">Nome</string>
+    <string name="stringRegisterActivityEditEmail">E-mail</string>
+    <string name="stringRegisterActivityEditUser">Usuário</string>
+    <string name="stringRegisterActivityEditPassword">Senha</string>
+    <string name="stringRegisterActivityButtonRegister">CADASTRAR</string>
+    <string name="stringRegisterActivityButtonCancel">CANCELAR</string>
+    <string name="open">Abre</string>
+    <string name="close">Fecha</string>
+    <string name="stringItemMenuTasks">Tarefas</string>
+    <string name="stringItemMenuSubjects">Disciplinas</string>
+    <string name="stringItemMenuSchedules">Horários</string>
+    <string name="stringItemMenuGrades">Notas</string>
+    <string name="stringItemMenuCalendar">Calendário</string>
+    <string name="stringItemMenuComplementaryHours">Horas complementares</string>
+    <string name="stringItemMenuAbout">Sobre</string>
+    <string name="stringHomeActivityToDoText">A fazer</string>
+    <string name="stringHomeActivityDoingText">Em progresso</string>
+    <string name="stringHomeActivityDoneText">Feito</string>
+    <string name="stringCalendarActivityTitle">Calendário</string>
+    <string name="stringGradesActivityTitle">Notas</string>
+    <string name="stringProfileActivityButtonUserPhoto">Tirar foto</string>
+    <string name="stringProfileActivityButtonLogout">SAIR DA CONTA</string>
+    <string name="stringSchedulesActivityTitle">Horários</string>
+    <string name="stringSchedulesActivitySubjectCode">Código</string>
+    <string name="stringSchedulesActivitySubjectMonday">Seg</string>
+    <string name="stringSchedulesActivitySubjectTuesday">Ter</string>
+    <string name="stringSchedulesActivitySubjectWednesday">Qua</string>
+    <string name="stringSchedulesActivitySubjectThursday">Qui</string>
+    <string name="stringSchedulesActivitySubjectFriday">Sex</string>
+    <string name="stringComplementaryHoursActivityTitle">Horas complementares</string>
+    <string name="stringComplementaryHoursActivityTitleTeaching">Ensino</string>
+    <string name="stringComplementaryHoursActivityTitleResearch">Pesquisa</string>
+    <string name="stringComplementaryHoursActivityTitleExtension">Extensão</string>
+    <string name="stringTasksActivityTitle">Tarefas</string>
+    <string name="stringSubjectsActivityTitle">Disciplinas</string>
+    <string name="stringAboutActivityTitle">Sobre</string>
+    <string name="stringItemMenuProfile">Perfil</string>
+    <string name="stringRegisterSubjectsEditTextName">Nome</string>
+    <string name="stringRegisterSubjectsEditTextTeacher">Professor</string>
+    <string name="stringRegisterSubjectsTitle">Cadastro de disciplinas</string>
+    <string name="stringRegisterSubjectsEditTextCode">Código</string>
+    <string name="stringRegisterSubjectsEditTextStartTime">Início</string>
+    <string name="stringRegisterSubjectsEditTextEndTime">Fim</string>
+    <string name="stringRegisterSubjectsSchedulesTitle">Horário</string>
+    <string name="stringRegisterSubjectsDaysOfTheWeekTitle">Dias da semana</string>
+    <string name="stringRegisterSubjectsCheckBoxMonday">Seg</string>
+    <string name="stringRegisterSubjectsCheckBoxTuesday">Ter</string>
+    <string name="stringRegisterSubjectsCheckBoxWednesday">Qua</string>
+    <string name="stringRegisterSubjectsCheckBoxThursday">Qui</string>
+    <string name="stringRegisterSubjectsCheckBoxFriday">Sex</string>
+    <string name="stringRegisterSubjectsButtonRegister">Salvar</string>
+    <string name="stringRegisterSubjectsButtonCancel">Cancelar</string>
+    <string name="stringRegisterTasksTitle">Cadastro de tarefas</string>
+    <string name="stringRegisterTasksEditTextName">Nome</string>
+    <string name="stringRegisterTasksEditTextDate">Data</string>
+    <string name="stringRegisterTasksEditTextHour">Hora</string>
+    <string name="stringRegisterTasksEditTextSubject">Disciplina</string>
+    <string name="stringRegisterTasksEditTextDescription">Descrição</string>
+    <string name="stringRegisterComplementaryHoursTitle">Cadastro de horas complementares</string>
+    <string name="stringRegisterComplementaryHoursDescription">Descrição</string>
+    <string name="stringRegisterComplementaryHoursWorkload">Carga horária</string>
+    <string name="stringRegisterTasksButtonRegister">Salvar</string>
+    <string name="stringRegisterTasksButtonCancel">Cancelar</string>
+    <string name="stringRegisterComplementaryHoursButtonRegister">Salvar</string>
+    <string name="stringRegisterComplementaryHoursButtonCancel">Cancelar</string>
+    <string name="stringCardGradesTitleSituation">Nota final e conceito: </string>
+    <string name="stringCardSchedulesNameCode"> Código: </string>
+    <string name="stringComplementaryHoursTypesTeaching">Ensino</string>
+    <string name="stringComplementaryHoursTypesResearch">Pesquisa</string>
+    <string name="stringComplementaryHoursTypesExtension">Extensão</string>
+    <string name="help">Neste aplicativo o método Kanban é utilizado
+        para gerenciar as tarefas. Para atualizar o status da sua tarefa você deve selecionar um dos dois ícones exibidos no card da tarefa</string>
+    <string name="titleHelp">Ajuda</string>
+
+
+
+    <string name="textYourDisciplines">Suas disciplinas</string>
+    <string name="buttonAdd">ADICIONAR</string>
+    <string name="textLogoNotes">Notas</string>
+    <string name="textLogoSchedules">Horários</string>
+    <string name="editTeacher">Professor</string>
+
+    <string name="editStart">Início</string>
+    <string name="editEnd">Término</string>
+    <string name="select">Selecione</string>
+    <string name="medium">Médio</string>
+    <string name="technical">Técnico</string>
+    <string name="graduation">Graduação</string>
+    <string name="errorRegister">Usuário/Email já cadastrados</string>
+    <string name="sucessRegister">Salvo com sucesso :D</string>
+    <string name="errorSaving">Erro ao salvar :(</string>
+    <string name="errorLogin">Senha ou Login inválidos</string>
+    <string name="welcome">Bem-vindo(a)</string>
+    <string name="sucessExcluded">Excluído com sucesso</string>
+    <string name="textYoutSchedules">Disciplinas cadastradas</string>
+    <string name="fields">Por favor preencha os campos</string>
+    <string name="textYourGrades">Suas notas</string>
+    <string name="av1">AV1</string>
+    <string name="p1">P1</string>
+    <string name="av2">AV2</string>
+    <string name="p2">P2</string>
+    <string name="av3">AV3</string>
+    <string name="p3">P3</string>
+    <string name="end">R</string>
+    <string name="situation">Sit</string>
+    <string name="media">M</string>
+    <string name="reprovado">Rep</string>
+    <string name="deleteSucess">Deletado com sucesso</string>
+    <string name="sucessUpdate">Atualizado com sucesso</string>
+    <string name="sucessReset">Redefinida com sucesso</string>
+    <string name="invalidCPF">CPF inválido</string>
+    <string name="invalidDate">data inválida</string>
+    <string name="invalidYearSemester">formato esperado: XXXX/XX</string>
+    <string name="confirmation">Confirmação</string>
+    <string name="isSure">Tem certeza?</string>
+    <string name="buttonDelete">EXCLUIR</string>
+    <string name="invalidHour">Por favor, preencha entre 8h e 22h</string>
+
+
+</resources>

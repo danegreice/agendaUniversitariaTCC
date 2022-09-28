@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/registerComplementaryHoursTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stringRegisterComplementaryHoursTitle"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/registerComplementaryHourSpinner"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            style="@style/text_input_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerComplementaryHoursTitle"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerComplementaryHoursDescriptionLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/registerComplementaryHourSpinner"
+            app:layout_constraintStart_toStartOf="@+id/registerComplementaryHourSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/registerComplementaryHourSpinner">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerComplementaryHoursDescription"
+                style="@style/text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:hint="@string/stringRegisterComplementaryHoursDescription"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerComplementaryHoursWorkloadLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/registerComplementaryHoursDescriptionLayout"
+            app:layout_constraintStart_toStartOf="@+id/registerComplementaryHoursDescriptionLayout"
+            app:layout_constraintTop_toBottomOf="@+id/registerComplementaryHoursDescriptionLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerComplementaryHoursWorkload"
+                style="@style/text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:hint="@string/stringRegisterComplementaryHoursWorkload"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/registerComplementaryHoursButtonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorSecondaryVariant"
+            android:layout_marginEnd="30dp"
+            android:text="@string/stringRegisterComplementaryHoursButtonRegister"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/registerComplementaryHoursButtonCancel"
+            app:layout_constraintEnd_toEndOf="@+id/registerComplementaryHoursWorkloadLayout"
+            app:layout_constraintTop_toTopOf="@+id/registerComplementaryHoursButtonCancel" />
+
+        <Button
+            android:id="@+id/registerComplementaryHoursButtonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorSecondaryVariant"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/stringRegisterComplementaryHoursButtonCancel"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/registerComplementaryHoursWorkloadLayout"
+            app:layout_constraintTop_toBottomOf="@+id/registerComplementaryHoursWorkloadLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

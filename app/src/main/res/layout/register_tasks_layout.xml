@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/registerTasksTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stringRegisterTasksTitle"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerTasksEditTextNameLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerTasksTitle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerTasksEditTextName"
+                style="@style/text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/stringRegisterTasksEditTextName"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerTasksEditTextDateLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="120dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/registerTasksEditTextNameLayout"
+            app:layout_constraintStart_toStartOf="@+id/registerTasksEditTextNameLayout"
+            app:layout_constraintTop_toBottomOf="@+id/registerTasksEditTextNameLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerTasksEditTextDate"
+                style="@style/text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:maxLines="1"
+                android:hint="@string/stringRegisterTasksEditTextDate"
+                android:inputType="date"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerTasksEditTextHourLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/registerTasksEditTextNameLayout"
+            app:layout_constraintStart_toEndOf="@+id/registerTasksEditTextDateLayout"
+            app:layout_constraintTop_toTopOf="@+id/registerTasksEditTextDateLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerTasksEditTextHour"
+                style="@style/text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/stringRegisterTasksEditTextHour"
+                android:maxLines="1"
+                android:inputType="time" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerTasksEditTextSubjectLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/registerTasksEditTextNameLayout"
+            app:layout_constraintStart_toStartOf="@+id/registerTasksEditTextNameLayout"
+            app:layout_constraintTop_toBottomOf="@+id/registerTasksEditTextDateLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerTasksEditTextSubject"
+                style="@style/text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:hint="@string/stringRegisterTasksEditTextSubject"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerTasksEditTextDescriptionLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="@+id/registerTasksEditTextSubjectLayout"
+            app:layout_constraintStart_toStartOf="@+id/registerTasksEditTextSubjectLayout"
+            app:layout_constraintTop_toBottomOf="@+id/registerTasksEditTextSubjectLayout"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerTasksEditTextDescription"
+                style="@style/text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:hint="@string/stringRegisterTasksEditTextDescription"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/registerTasksButtonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="?attr/colorSecondaryVariant"
+            android:text="@string/stringRegisterTasksButtonRegister"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/registerTasksButtonCancel"
+            app:layout_constraintEnd_toEndOf="@+id/registerTasksEditTextDescriptionLayout"
+            app:layout_constraintTop_toTopOf="@+id/registerTasksButtonCancel" />
+
+        <Button
+            android:id="@+id/registerTasksButtonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="?attr/colorSecondaryVariant"
+            android:text="@string/stringRegisterTasksButtonCancel"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/registerTasksEditTextDescriptionLayout"
+            app:layout_constraintTop_toBottomOf="@+id/registerTasksEditTextDescriptionLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
